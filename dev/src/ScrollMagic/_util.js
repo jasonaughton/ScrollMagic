@@ -138,7 +138,7 @@ var _util = ScrollMagic._util = (function (window) {
 		return _type(v) === 'string';
 	};
 	_type.Function = function (v) {
-		return _type(v) === 'function';
+		return v instanceof Function;
 	};
 	_type.Array = function (v) {
 		return Array.isArray(v);
